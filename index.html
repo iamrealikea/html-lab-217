@@ -8,31 +8,38 @@ initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="/img/icon.jpg"
 </head>
 <body>
-  <header> 
-      <h1>Monke Cafe</h1>
+  <header>
+      <h1 id="Home">Monke Cafe</h1>
+      <p>Always happinest place for <strong>everyone</strong></p>
   </header>
   <nav>
       <ul>
-        <li>Home</li>
-        <li>List</li>
-        <li>Location & Info</li>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Signature">Signature menu</a></li>
+        <li><a href="#Menu">Menu List</a></li>
+        <li><a href="#Location">Location & Info</a></li>
+        <li><a href="#Contact">Contact Us</a></li>
       </ul>
   </nav>
   <main>
-    <section>
+    <section id="Signature">
       <h2>Signature Menu</h2>
         <ol>
           <li>Thai Tea Latte</li>
+          <dt>Local tea from Thailand with aroma and balance sweet</dd>
           <dt><img src="/img/thaitea.jpg" alt="Thai Tea Latte" width="200" height="299"></dt>
           <li>Green Tea Latte</li>
+          <dt>Essential tea with signature scent and taste</dd>
           <dt><img src="/img/greentea.webp" alt="Green Tea Latte" width="200" height="200"></dt>
           <li>Chocolate</li>
+          <dt>Bitter and sweetness from cocoa</dt>
           <dt><img src="/img/chocolate.jpg" alt="Chocolate" width="200" height="230"></dt>
           <li>Cappuccino </li>
+          <dt>Selected coffee beans for delicious cappuccino</dt>
           <dt><img src="/img/cappuccino.jpg" alt="Cappuccino" width="200" height="252"></dt>
         </ol>
     </section>
-    <section>
+    <section id="Menu">
       <h2>Menu List</h2>
       <table border="1" style="width:60%">
         <tr>
@@ -73,13 +80,33 @@ initial-scale=1" />
         </tr>
       </table>
     </section>
-    <section>
-      <h2>Location & Info</h2>
-      <h3>ถนน แก่นรัตนะตำบล ปากเกร็ด อำเภอปากเกร็ด นนทบุรี 11120</h3>
-      <a href="https://maps.app.goo.gl/NWpSRnAUxqZqh5gJ7" target="_blank" rel='noopener'>Google Maps</a>
-      <h3> Tell. 067-911-1049</h3>
-      <h3> Open 11.00AM - 6.00PM</h3>
-      <h3> Closed: lazy day </h3>
+    <section id="Location">
+      <h2>Location & Information</h2>
+      <ul>
+        <li>ถนน แก่นรัตนะตำบล ปากเกร็ด อำเภอปากเกร็ด นนทบุรี 11120</li>
+        <a href="https://maps.app.goo.gl/NWpSRnAUxqZqh5gJ7" target="_blank" rel='noopener'>Google Maps</a>
+        
+        <li> Open 11.00AM - 6.00PM</li>
+        <li> Closed: lazy day </li>
+      </ul>
+    </section>
+    <section id="Contact">
+      <form> 
+        <h2>Contact Us</h2>
+        <h3> Tell. 067-911-1049</h3>
+          <h3> For more infomation</h3>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"><br>
+          <label for="lname">Telephone:</label><br>
+          <input type="text" id="telephone" name="telephone"><br>
+          <label for="lname">Email:</label><br>
+          <input type="text" id="email" name="email"><br>
+          <label for="comment">Comment:</label><br>
+          <input type="text" id="comment" name="comment" size="50"><br>
+          <input type="submit" value="Submit">
+      </form>
     </section>
   </main>
   <footer>
